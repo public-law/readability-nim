@@ -1,2 +1,5 @@
-tests/t*
-!tests/t*.nim
+nimcache/
+*.exe
+tests/*
+!tests/*.nim
+!tests/golden/

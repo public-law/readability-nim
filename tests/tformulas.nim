@@ -37,7 +37,7 @@ suite "formulas":
     raisesKind NotFinite, readingLevelFromCloze(Inf)
 
   test "golden formula cases":
-    let cases = parseFile("../readability-rs/tests/golden/formulas.json")["cases"]
+    let cases = parseFile("tests/golden/formulas.json")["cases"]
     var mismatches = 0
     for c in cases:
       let matches =

@@ -9,7 +9,7 @@ proc outcome(text: string): string =
 
 suite "golden passages":
   test "parity report":
-    let cases = parseFile("../readability-rs/tests/golden/passages.json")["cases"]
+    let cases = parseFile("tests/golden/passages.json")["cases"]
     var plain, plainOk, markup, markupOk: int
     for c in cases:
       let text = c["text"].getStr
